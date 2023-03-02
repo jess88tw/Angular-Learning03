@@ -1,4 +1,7 @@
-<!-- ngStyle -->
-<p [ngStyle]="{ backgroundColor: getColor() }">
+<!-- ngStyle, ngClass -->
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ turnWhite: fontWhite() }"
+>
   Server with {{ serverId }} is {{ serverStatus }}
 </p>

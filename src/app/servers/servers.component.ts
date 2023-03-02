@@ -28,7 +28,11 @@ export class ServersComponent implements OnInit {
   // ngIf
   serverCreated = false;
 
+  // ngFor
+  servers = ['testServer 1', 'testServer 2'];
+
   onCreateServer() {
+    this.servers.push('testServer New');
     this.serverCreatStatus = 'Server was created! Name is ' + this.serverName;
     this.serverCreated = true;
   }
